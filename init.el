@@ -18,4 +18,5 @@
 ;; next we are going to import the files
 (require 'init-elixir)
 (require 'init-ido)
+(require 'init-js)
 (require 'init-nyan)
