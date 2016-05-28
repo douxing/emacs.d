@@ -1,0 +1,6 @@
+# package.el related
+elpa/
+
+# emacs temp files
+ido.last
+*~

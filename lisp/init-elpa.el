@@ -7,9 +7,13 @@
 	("melpa-stable" . "https://stable.melpa.org/packages/")))
 (package-initialize)
 
-(defun dx-init-elpa/package-install (pkg)
+(defun dx-package-install (pkg)
   "require package if not installed"
   (unless (package-installed-p pkg)
-    (package-install pkg)))
+    (if (assoc pkg package-archive-contents)
+	(package-install pkg)
+      (progn ;; refresh before try again
+	(package-refresh-contents)
+	(dx-package-install pkg)))))
 
 (provide 'init-elpa)

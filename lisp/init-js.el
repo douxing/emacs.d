@@ -1,3 +1,3 @@
-(dx-init-elpa/package-install 'coffee-mode)
+(dx-package-install 'coffee-mode)
 
 (provide 'init-js)

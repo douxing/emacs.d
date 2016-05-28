@@ -1,4 +1,4 @@
 ;;
-(dx-init-elpa/package-install 'elixir-mode)
+(dx-package-install 'elixir-mode)
 
 (provide 'init-elixir)
