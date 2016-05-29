@@ -16,7 +16,6 @@
 (require 'init-elpa)
 
 ;; next we are going to import the files
-(require 'init-elixir)
 (require 'init-ido)
-(require 'init-js)
-(require 'init-nyan)
+(require 'init-tools)
+(require 'init-languages)

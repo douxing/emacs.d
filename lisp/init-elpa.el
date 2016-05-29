@@ -16,4 +16,6 @@
 	(package-refresh-contents)
 	(dx-package-install pkg)))))
 
+(dx-package-install 'use-package)
+
 (provide 'init-elpa)
