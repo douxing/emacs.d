@@ -7,4 +7,7 @@
   :ensure t
   :config (undo-tree-mode))
 
+(use-package magit
+  :ensure t)
+
 (provide 'init-tools)
