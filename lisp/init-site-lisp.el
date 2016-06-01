@@ -4,9 +4,9 @@
   (progn
     (setq load-path
 	  (append
-	   (loop for dir in (directory-files site-lisp-dir)
-		    unless (string-match "^\\." dir)
-		    collecting (expand-file-name dir))
-	  load-path))))
+	   (remove-if-not
+	    (lambda (dir) (file-directory-p dir))
+	    (directory-files site-lisp-dir t "^[^.]+$"))
+	   load-path))))
 
 (provide 'init-site-lisp)
