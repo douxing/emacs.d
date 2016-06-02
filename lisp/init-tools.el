@@ -5,9 +5,9 @@
 
 (use-package undo-tree
   :ensure t
-  :config (undo-tree-mode))
+  :diminish undo-tree-mode
+  :config (global-undo-tree-mode))
 
-(use-package magit
-  :ensure t)
+;(use-package magit)
 
 (provide 'init-tools)
