@@ -3,8 +3,8 @@
 
 (setq package-archives
       '(;;("gnu" . "http://elpa.gnu.org/packages/")
-	("melpa" . "https://melpa.org/packages/")
-	("melpa-stable" . "https://stable.melpa.org/packages/")))
+	("melpa" . "http://melpa.org/packages/")
+	("melpa-stable" . "http://stable.melpa.org/packages/")))
 (package-initialize)
 
 (defun dx-package-install (pkg)
@@ -14,7 +14,7 @@
 	(package-install pkg)
       (progn ;; refresh before try again
 	(package-refresh-contents)
-	(dx-package-install pkg)))))
+	(package-install pkg)))))
 
 (dx-package-install 'use-package)
 

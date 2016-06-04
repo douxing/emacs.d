@@ -7,7 +7,7 @@
 
 (defconst dx-gc-cons-threshold gc-cons-threshold
   "Initial value of 'gc-cons-threshold' at startup time")
-(setq gc-cons-threshold (* 128 1024 1024))
+(setq gc-cons-threshold (* 32 1024 1024))
 ;; might like to uncomment these
 ;;(add-hook 'after-init-hook
 ;;	  (lambda () (setq gc-cons-threshold dx-predefined/gc-cons-threshold))
