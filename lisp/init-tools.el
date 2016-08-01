@@ -10,4 +10,10 @@
 
 ;(use-package magit)
 
+(use-package switch-window
+  :ensure t
+  :config (progn
+	    (setq-default switch-window-shortcut-style 'alphabet)
+	    (global-set-key (kbd "C-x o") 'switch-window)))
+
 (provide 'init-tools)
