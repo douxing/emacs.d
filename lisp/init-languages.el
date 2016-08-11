@@ -5,11 +5,13 @@
 ;; javascript 
 (use-package coffee-mode
   :ensure t)
+
 (use-package js2-mode
   :ensure t
-  :mode (("\\.js$" . js2-mode))
+  :mode (("\\.js$" . js2-mode)
+	 ("\\.es6$" . js2-mode))
   :config (progn
-	    (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+	    ;; (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 	    (custom-set-variables '(js2-basic-offset 2))))
 
 ;; company
