@@ -20,6 +20,14 @@
 	    ;; js-indent-level is used to set json-reformat:indent-width
 	    (setq js-indent-level 2)))
 
+(use-package markdown-mode
+  :ensure t
+  :commands (markdown-mode gfm-mode)
+  :mode (("README\\.md\\'" . gfm-mode)
+         ("\\.md\\'" . markdown-mode)
+         ("\\.markdown\\'" . markdown-mode))
+  :init (setq markdown-command "multimarkdown"))
+
 ;; company
 (use-package company
   :ensure t
