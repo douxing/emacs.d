@@ -11,6 +11,12 @@
   :config (progn
 	    (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 	    (custom-set-variables '(js2-basic-offset 2))))
+(use-package json-mode
+  :ensure t
+  :mode ((".\\json$" . json-mode))
+  :config (progn
+	    ;; js-indent-level is used to set json-reformat:indent-width
+	    (setq js-indent-level 2)))
 
 ;; company
 (use-package company
