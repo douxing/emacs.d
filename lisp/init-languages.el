@@ -19,7 +19,9 @@
   :mode ((".\\json$" . json-mode))
   :config (progn
 	    ;; js-indent-level is used to set json-reformat:indent-width
-	    (setq js-indent-level 2)))
+	    (setq js-indent-level 2)
+	    ;; http://stackoverflow.com/questions/45861/how-do-i-get-js2-mode-to-use-spaces-instead-of-tabs-in-emacs
+	    (setq indent-tabs-mode nil)))
 
 (use-package markdown-mode
   :ensure t
