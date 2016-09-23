@@ -18,10 +18,19 @@
 
 (use-package json-mode
   :ensure t
-  :mode ((".\\json$" . json-mode))
+  :mode (("\\.json$" . json-mode))
   :config (progn
 	    ;; js-indent-level is used to set json-reformat:indent-width
 	    (setq js-indent-level 2)))
+
+;; http://web-mode.org/
+(use-package web-mode
+  :ensure t
+  :mode (("\\.jsx$" . web-mode)
+         ("\\.html$" . web-mode))
+  :config (progn
+	    (setq-default indent-tabs-mode nil)
+            (setq-default tab-width 2)))
 
 (use-package markdown-mode
   :ensure t
