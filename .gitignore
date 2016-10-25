@@ -8,3 +8,6 @@ url/
 
 # smex tempfile
 .smex-items
+
+# eshell files
+eshell/

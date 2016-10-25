@@ -27,10 +27,14 @@
 (use-package web-mode
   :ensure t
   :mode (("\\.jsx$" . web-mode)
-         ("\\.html$" . web-mode))
+         ("\\.html$" . web-mode)
+         ("\\.css$" . web-mode))
   :config (progn
 	    (setq-default indent-tabs-mode nil)
-            (setq-default tab-width 2)))
+      (setq-default tab-width 2)
+      (setq web-mode-code-indent-offset 2)
+      (setq web-mode-markup-indent-offset 2)
+      (setq web-mode-css-indent-offset 2)))
 
 (use-package markdown-mode
   :ensure t
