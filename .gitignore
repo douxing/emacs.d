@@ -4,6 +4,7 @@ elpa/
 # emacs temp files
 ido.last
 *~
+\#*.*\#
 url/
 
 # smex tempfile
