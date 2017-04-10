@@ -6,6 +6,10 @@
 (use-package coffee-mode
   :ensure t)
 
+;; go-lang
+(use-package go-mode
+  :ensure t)
+
 (use-package js2-mode
   :ensure t
   :mode (("\\.js$" . js2-mode)
