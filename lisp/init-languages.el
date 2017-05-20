@@ -10,6 +10,10 @@
 (use-package go-mode
   :ensure t)
 
+;; rust-lang
+(use-package rust-mode
+  :ensure t)
+
 (use-package js2-mode
   :ensure t
   :mode (("\\.js$" . js2-mode)

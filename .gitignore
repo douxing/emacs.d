@@ -3,6 +3,7 @@ elpa/
 
 # emacs temp files
 ido.last
+\#ido.last\#
 *~
 \#*.*\#
 url/
@@ -12,3 +13,6 @@ url/
 
 # eshell files
 eshell/
+
+# session files
+session.*
