@@ -8,7 +8,9 @@
 
 ;; go-lang
 (use-package go-mode
-  :ensure t)
+  :ensure t
+  :config (progn
+	    (add-hook 'go-mode-hook (lambda () (setq tab-width 4)))))
 
 ;; rust-lang
 (use-package rust-mode
