@@ -38,7 +38,8 @@
   :ensure t
   :mode (("\\.jsx$" . web-mode)
          ("\\.html$" . web-mode)
-         ("\\.css$" . web-mode))
+         ("\\.css$" . web-mode)
+         ("\\.vue$" . web-mode))
   :config (progn
 	    (setq-default indent-tabs-mode nil)
       (setq-default tab-width 2)
