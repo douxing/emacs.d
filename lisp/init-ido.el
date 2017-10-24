@@ -6,7 +6,7 @@
   :config (progn
 	    (setq ido-enable-flex-matching t)))
 
-(use-package ido-ubiquitous
+(use-package ido-completing-read+
   :ensure t
   :config (progn
 	    (ido-ubiquitous-mode t)))
