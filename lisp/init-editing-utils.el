@@ -21,4 +21,6 @@
  jit-lock-defer-time 0
  )
 
+(desktop-save-mode t)
+
 (provide 'init-editing-utils)

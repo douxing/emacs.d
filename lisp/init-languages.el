@@ -13,8 +13,13 @@
 	    (add-hook 'go-mode-hook (lambda () (setq tab-width 4)))))
 
 ;; rust-lang
+(use-package cargo
+  :ensure  t)
+
 (use-package rust-mode
-  :ensure t)
+  :ensure t
+  :init
+  (add-hook 'rust-mode-hook 'cargo-minor-mode))
 
 (use-package js2-mode
   :ensure t
