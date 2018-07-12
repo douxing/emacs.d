@@ -2,6 +2,10 @@
 
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 
+;; (let (path) ; add PATH to exec-path
+;;  (setq path (split-string(getenv "PATH") ":"))
+;;  (dolist (p path) (add-to-list) 'exec-path path))
+
 (defconst dx-gc-cons-threshold gc-cons-threshold
   "Initial value of 'gc-cons-threshold' at startup time")
 (setq gc-cons-threshold (* 32 1024 1024))
