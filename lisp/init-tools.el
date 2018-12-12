@@ -16,4 +16,9 @@
 	    (setq-default switch-window-shortcut-style 'alphabet)
 	    (global-set-key (kbd "C-x o") 'switch-window)))
 
+(use-package magit
+  :ensure t
+  :config (progn
+	    (global-set-key (kbd "C-x g") 'magit-status)))
+
 (provide 'init-tools)

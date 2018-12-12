@@ -1,16 +1,16 @@
 ;; elixir-lang
-(use-package elixir-mode
-  :ensure t)
+;; (use-package elixir-mode
+;;   :ensure t)
 
 ;; javascript 
-(use-package coffee-mode
-  :ensure t)
+;; (use-package coffee-mode
+;;   :ensure t)
 
 ;; go-lang
-(use-package go-mode
-  :ensure t
-  :config (progn
-	    (add-hook 'go-mode-hook (lambda () (setq tab-width 4)))))
+;; (use-package go-mode
+;;   :ensure t
+;;   :config (progn
+;; 	    (add-hook 'go-mode-hook (lambda () (setq tab-width 4)))))
 
 ;; rust-lang
 (use-package cargo
