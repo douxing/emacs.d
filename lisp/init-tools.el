@@ -1,4 +1,8 @@
-;; nyam-mode
+;;; init-tools --- for the tools
+;;; Commentary:
+;;; for the tools
+
+;;; Code:
 (use-package nyan-mode
   :init (nyan-mode t)
   :ensure t)
@@ -22,3 +26,4 @@
 	    (global-set-key (kbd "C-x g") 'magit-status)))
 
 (provide 'init-tools)
+;;; init-tools ends here

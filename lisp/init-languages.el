@@ -1,8 +1,17 @@
+;;; init-languages --- get languages work
+;;; Commentary:
+;;; where all programming language configs located
+
+;;; Code:
+(use-package flycheck
+  :ensure t
+  :init (global-flycheck-mode))
+
 ;; elixir-lang
 ;; (use-package elixir-mode
 ;;   :ensure t)
 
-;; javascript 
+;; javascript
 ;; (use-package coffee-mode
 ;;   :ensure t)
 
@@ -13,8 +22,8 @@
 ;; 	    (add-hook 'go-mode-hook (lambda () (setq tab-width 4)))))
 
 ;; rust-lang
-(use-package cargo
-  :ensure  t)
+;;(use-package cargo
+;;  :ensure  t)
 
 (use-package rust-mode
   :ensure t
@@ -70,3 +79,5 @@
   (add-hook 'after-init-hook 'global-company-mode))
 
 (provide 'init-languages)
+;;; init-languages.el ends here
+

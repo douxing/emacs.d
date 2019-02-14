@@ -7,6 +7,8 @@ ido.last
 *~
 \#*.*\#
 url/
+.emacs.desktop
+.emacs.desktop.lock
 
 # smex tempfile
 .smex-items

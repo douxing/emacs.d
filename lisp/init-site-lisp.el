@@ -1,4 +1,4 @@
-;; Set load-path
+;;; Set load-path
 (eval-when-compile (require 'cl))
 (let* ((site-lisp-dir (expand-file-name "site-lisp/" user-emacs-directory)))
   (progn
